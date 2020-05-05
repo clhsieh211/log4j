@@ -103,7 +103,8 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
           <forkMode>pertest</forkMode>
           <skip>false</skip>
           <includes>
-            <include>org/apache/log4j/MyMsgTestCase.java</include>
+            <!-- <include>org/apache/log4j/MyMsgTestCase.java</include> -->
+            <include>org/apache/log4j/MyFSMTestCase.java</include>
 
             <include>org/apache/log4j/LevelTest.java</include>
             <include>org/apache/log4j/PriorityTest.java</include>
