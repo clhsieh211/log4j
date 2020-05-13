@@ -105,6 +105,9 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
           <includes>
             <!-- <include>org/apache/log4j/MyMsgTestCase.java</include> -->
             <include>org/apache/log4j/MyFSMTestCase.java</include>
+            <include>org/apache/log4j/MyConsoleAppenderTestCase.java</include>
+            <include>org/apache/log4j/MyFileAppenderTestCase.java</include>
+            <include>org/apache/log4j/MyAsyncAppenderTestCase.java</include>
 
             <include>org/apache/log4j/LevelTest.java</include>
             <include>org/apache/log4j/PriorityTest.java</include>
