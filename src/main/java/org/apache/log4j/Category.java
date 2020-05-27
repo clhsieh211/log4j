@@ -901,6 +901,16 @@ public class Category implements AppenderAttachable {
        }
    }
 
+   public void myFireRemoveAppenderEvent(final Appender appender) {
+       if (appender != null) {
+           if (repository instanceof Hierarchy) {
+               ((Hierarchy) repository).fireRemoveAppenderEvent(this, appender);
+           } else if (repository instanceof HierarchyEventListener) {
+               ((HierarchyEventListener) repository).removeAppenderEvent(this, appender);
+           }
+       }
+   }
+
   /**
      Remove all previously added appenders from this Category
      instance.
