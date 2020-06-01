@@ -2,4 +2,4 @@ language:  java
 jdk:
   - oraclejdk8
   
-mvn package -DskipTests=True
+install: mvn package -DskipTests=True
