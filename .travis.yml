@@ -10,4 +10,4 @@ before_install:
   - sudo update-java-alternatives -s java-1.8.0-openjdk-amd64
 sudo: required
 
-install: mvn package -DskipTests=True
+install: mvn package
