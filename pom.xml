@@ -197,7 +197,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
             <id>ntdll</id>
             <configuration>
               <tasks>
-                <ant antfile="src/ntdll/build.xml" target="${ntdll_target}">
+                <ant antfile="src/ntdll/build.xml" target="build">
                   <property name="target.dir" location="target" />
                   <property name="classes.dir" location="target/classes" />
                   <property name="src.dir" location="src/ntdll" />
@@ -346,7 +346,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
             <artifactId>jdk.tools</artifactId>
             <version>jdk1.8</version>
             <scope>system</scope>
-            <systemPath>${tools.jar}</systemPath>
+            <systemPath>/usr/lib/jvm/java-1.8.0-openjdk-amd64/lib/tools.jar</systemPath>
           </dependency>
         </dependencies>
       </plugin>
@@ -545,7 +545,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <tools.jar>${java.home}/../lib/tools.jar</tools.jar>
+        <tools.jar>/usr/lib/jvm/java-1.8.0-openjdk-amd64/lib/tools.jar</tools.jar>
         <m2_repo>${user.home}/.m2/repository</m2_repo>
         <ntdll_target>build</ntdll_target>
       </properties>
